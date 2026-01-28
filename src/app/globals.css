@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --biza-green: #318a83;
+  --biza-green-dark: #29726b;
+  --biza-green-light: #6bafa7;
+  --biza-yellow: #facc15;
+  --biza-yellow-dark: #eab308;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tajawal', 'Inter', sans-serif;
+}
+
+[dir="rtl"] body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+[dir="ltr"] body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-biza-green hover:bg-biza-green-dark text-white font-semibold py-3 px-8 rounded-full 
+           transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-biza-green/30;
+  }
+  
+  .btn-secondary {
+    @apply bg-biza-yellow hover:bg-biza-yellow-dark text-gray-900 font-semibold py-3 px-8 rounded-full 
+           transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-biza-yellow/30;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-biza-green text-biza-green hover:bg-biza-green hover:text-white font-semibold 
+           py-3 px-8 rounded-full transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8 lg:px-16;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-biza-green via-emerald-500 to-biza-yellow bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-2xl hover:shadow-biza-green/20 hover:-translate-y-2;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/70 border border-white/20 shadow-xl;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-biza-green via-emerald-600 to-teal-700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--biza-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--biza-green-dark);
+}
+
+/* Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* Floating Animation */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Glow Effects */
+.glow-green {
+  box-shadow: 0 0 40px rgba(61, 154, 126, 0.4);
+}
+
+.glow-yellow {
+  box-shadow: 0 0 40px rgba(250, 204, 21, 0.4);
+}
+
+/* Pattern Overlays */
+.pattern-dots {
+  background-image: radial-gradient(circle, rgba(61, 154, 126, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.pattern-grid {
+  background-image: 
+    linear-gradient(rgba(61, 154, 126, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(61, 154, 126, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #3D9A7E 0%, #2d7a62 50%, #1f5a46 100%);
+}
+
+/* Card Shine Effect */
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+/* Stats Counter Animation */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.count-up {
+  animation: countUp 1s ease-out forwards;
+}
+
+/* RTL Support */
+[dir="rtl"] .marquee-content {
+  animation-direction: reverse;
+}
