@@ -49,6 +49,8 @@ const config: Config = {
       animation: {
         'marquee': 'marquee 30s linear infinite',
         'marquee-reverse': 'marquee-reverse 30s linear infinite',
+        'marquee-slow': 'marquee 50s linear infinite',
+        'marquee-reverse-slow': 'marquee-reverse 50s linear infinite',
         'float': 'float 6s ease-in-out infinite',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'spin-slow': 'spin 20s linear infinite',
