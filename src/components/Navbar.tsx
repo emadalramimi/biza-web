@@ -145,7 +145,7 @@ export default function Navbar() {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="btn-primary text-sm"
+              className="btn-secondary text-sm"
             >
               {t('nav.getConsultation')}
             </Link>
@@ -216,7 +216,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="btn-primary text-sm"
+                  className="btn-secondary text-sm"
                 >
                   {t('nav.getConsultation')}
                 </Link>

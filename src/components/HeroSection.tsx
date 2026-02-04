@@ -126,7 +126,7 @@ export default function HeroSection() {
                 <div className="text-white/60 text-sm">{t('stats.satisfaction')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-1">5+</div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-1">30+</div>
                 <div className="text-white/60 text-sm">{t('stats.experience')}</div>
               </div>
             </motion.div>

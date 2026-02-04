@@ -62,7 +62,7 @@ export default function ContactPage() {
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/biza.om', label: 'Instagram', color: 'hover:bg-pink-500' },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/biza-for-financial-services/', label: 'LinkedIn', color: 'hover:bg-blue-600' },
-    { icon: MessageCircle, href: 'https://wa.me/message/HVVFJVDOVOLRP1', label: 'WhatsApp', color: 'hover:bg-green-500' },
+    { icon: MessageCircle, href: 'https://wa.me/96877147445', label: 'WhatsApp', color: 'hover:bg-green-500' },
   ];
 
   return (

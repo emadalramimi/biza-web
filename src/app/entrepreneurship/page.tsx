@@ -23,25 +23,25 @@ const services = [
     icon: Users,
     titleKey: 'entrepreneur.service1.title',
     descKey: 'entrepreneur.service1.desc',
-    color: 'from-purple-500 to-pink-600',
+    color: 'from-biza-green to-biza-green-dark',
   },
   {
     icon: GraduationCap,
     titleKey: 'entrepreneur.service2.title',
     descKey: 'entrepreneur.service2.desc',
-    color: 'from-blue-500 to-indigo-600',
+    color: 'from-biza-yellow to-biza-yellow-dark',
   },
   {
     icon: Wallet,
     titleKey: 'entrepreneur.service3.title',
     descKey: 'entrepreneur.service3.desc',
-    color: 'from-emerald-500 to-teal-600',
+    color: 'from-biza-green-light to-biza-green',
   },
   {
     icon: Building,
     titleKey: 'entrepreneur.service4.title',
     descKey: 'entrepreneur.service4.desc',
-    color: 'from-orange-500 to-red-600',
+    color: 'from-biza-yellow-dark to-biza-yellow',
   },
 ];
 
@@ -66,10 +66,10 @@ export default function EntrepreneurshipPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-purple-600 via-indigo-700 to-purple-800 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-biza-green via-biza-green-dark to-slate-900 overflow-hidden">
         <div className="absolute inset-0 pattern-grid opacity-20" />
         <div className="absolute top-20 start-10 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 end-10 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 end-10 w-96 h-96 bg-biza-yellow/10 rounded-full blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -108,14 +108,14 @@ export default function EntrepreneurshipPage() {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="absolute top-0 start-0 bg-white rounded-2xl p-4 shadow-xl"
               >
-                <Lightbulb className="w-8 h-8 text-purple-600" />
+                <Lightbulb className="w-8 h-8 text-biza-green" />
               </motion.div>
               <motion.div
                 animate={{ y: [0, 15, 0] }}
                 transition={{ duration: 5, repeat: Infinity, delay: 1 }}
                 className="absolute bottom-0 end-0 bg-white rounded-2xl p-4 shadow-xl"
               >
-                <Rocket className="w-8 h-8 text-pink-500" />
+                <Rocket className="w-8 h-8 text-biza-yellow" />
               </motion.div>
             </motion.div>
           </div>
@@ -156,17 +156,17 @@ export default function EntrepreneurshipPage() {
                 className="relative"
               >
                 <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-biza-green to-biza-green-dark rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-4xl font-bold text-purple-200 mb-2">{index + 1}</div>
+                  <div className="text-4xl font-bold text-biza-green/20 mb-2">{index + 1}</div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
                   <p className="text-gray-600">{step.desc}</p>
                 </div>
                 
                 {/* Connector Line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 -end-3 w-6 h-0.5 bg-purple-200 z-0" />
+                  <div className="hidden md:block absolute top-1/2 -end-3 w-6 h-0.5 bg-biza-green/20 z-0" />
                 )}
               </motion.div>
             ))}
@@ -205,7 +205,7 @@ export default function EntrepreneurshipPage() {
       </section>
 
       {/* Success Stats */}
-      <section className="section-padding bg-gradient-to-br from-purple-600 to-indigo-700 text-white">
+      <section className="section-padding bg-gradient-to-br from-biza-green to-biza-green-dark text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[

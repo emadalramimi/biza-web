@@ -61,10 +61,10 @@ export default function CTASection() {
             </Link>
 
             <a
-              href="https://wa.me/message/HVVFJVDOVOLRP1"
+              href="https://wa.me/96877147445"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-300"
+              className="flex items-center gap-2 px-6 py-3 bg-biza-yellow/20 hover:bg-biza-yellow/30 text-biza-yellow rounded-full transition-all duration-300"
             >
               <MessageCircle className="w-5 h-5" />
               <span>{language === 'ar' ? 'تواصل عبر واتساب' : 'Chat on WhatsApp'}</span>

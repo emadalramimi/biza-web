@@ -217,7 +217,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Team Members
     'team.amira.name': 'Amira Al-Kharousi',
     'team.amira.role': 'Chief Executive Officer',
-    'team.amira.bio': 'Over six years of experience in business analysis and development, auditing, accounting, and investment portfolio management. Bachelor\'s in International Business Administration (Accounting), MBA, and Master\'s in Advanced Technologies and Entrepreneurship.',
+    'team.amira.bio': 'Over 6 years of experience in business analysis, auditing, and investment management. MBA and Master\'s in Advanced Technologies and Entrepreneurship.',
     
     'team.fahad.name': 'Fahad Malik',
     'team.fahad.role': 'Head of Financial Advisory',

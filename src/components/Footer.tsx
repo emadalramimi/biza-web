@@ -39,7 +39,7 @@ export default function Footer() {
       label: 'LinkedIn' 
     },
     { 
-      href: 'https://wa.me/message/HVVFJVDOVOLRP1', 
+      href: 'https://wa.me/96877147445', 
       icon: MessageCircle, 
       label: 'WhatsApp' 
     },
