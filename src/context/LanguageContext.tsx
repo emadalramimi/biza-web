@@ -77,6 +77,10 @@ const translations: Record<Language, Record<string, string>> = {
     'team.fahad.role': 'رئيس الاستشارات المالية',
     'team.fahad.bio': 'محاسب قانوني معتمد ومدير مالي جزئي مع خبرة عابرة للحدود في الولايات المتحدة وكندا ودول الخليج. يقود ممارسات الاستشارات المالية في بيزه منذ عامين.',
     
+    'team.mohammed.name': 'محمد العبري',
+    'team.mohammed.role': 'محترف استثمار',
+    'team.mohammed.bio': 'محترف استثمار ذو خبرة وتوجه نحو النتائج مع سجل حافل في إدارة الاستثمار. ماهر في تقييم الشركات وإدارة الأصول والنمذجة المالية وإدارة المحافظ الاستثمارية. حاصل على ماجستير إدارة الأعمال وبكالوريوس المالية واجتاز المستوى الثاني من CFA.',
+    
     'team.yahya.name': 'د. يحيى الحسيني',
     'team.yahya.role': 'خبير واستشاري إحصاء',
     'team.yahya.bio': 'خبرة مهنية تمتد لأكثر من 28 عامًا في القطاعين الحكومي والخاص. حاصل على درجة الدكتوراه في القيادة والإدارة وماجستير إدارة الأعمال. الرئيس المؤسس للجمعية العمانية للإحصاء.',
@@ -222,6 +226,10 @@ const translations: Record<Language, Record<string, string>> = {
     'team.fahad.name': 'Fahad Malik',
     'team.fahad.role': 'Head of Financial Advisory',
     'team.fahad.bio': 'Chartered Accountant and Fractional CFO with cross-border experience in the US, Canada, and the GCC. Has been leading financial advisory practices at Biza for two years.',
+    
+    'team.mohammed.name': 'Mohammed Al-Abri',
+    'team.mohammed.role': 'Investment Professional',
+    'team.mohammed.bio': 'Experienced investment professional with proven track record in company valuation, asset management, financial modeling, and portfolio management. MBA and Bachelor of Finance, CFA Level 2.',
     
     'team.yahya.name': 'Dr. Yahya Al-Hussaini',
     'team.yahya.role': 'Statistical Expert & Consultant',

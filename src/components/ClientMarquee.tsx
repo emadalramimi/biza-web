@@ -228,15 +228,45 @@ export default function ClientMarquee() {
         }
 
         @media (max-width: 768px) {
+          .partners-marquee-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+
+          .partners-marquee-container::-webkit-scrollbar {
+            display: none;
+          }
+
           .partners-marquee-track,
           .partners-marquee-track-reverse {
-            animation-duration: 80s;
+            animation: none;
+            gap: 0.75rem;
+            padding: 0 1rem;
           }
 
           .partners-logo-card {
-            width: 110px;
-            height: 110px;
-            padding: 1rem;
+            width: 90px;
+            height: 90px;
+            padding: 0.75rem;
+            border-radius: 12px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .partners-marquee-track,
+          .partners-marquee-track-reverse {
+            gap: 0.625rem;
+            padding: 0 1rem;
+          }
+
+          .partners-logo-card {
+            width: 85px;
+            height: 85px;
+            padding: 0.75rem;
+            border-radius: 12px;
           }
         }
 

@@ -23,6 +23,14 @@ const teamMembers = [
     linkedin: '#',
   },
   {
+    id: 'mohammed',
+    image: '/team/Mohammed.jpeg',
+    nameKey: 'team.mohammed.name',
+    roleKey: 'team.mohammed.role',
+    bioKey: 'team.mohammed.bio',
+    linkedin: 'https://www.linkedin.com/in/mohammed-al-abri-101041a8/',
+  },
+  {
     id: 'yahya',
     image: '/team/Yahya-expert.jpeg',
     nameKey: 'team.yahya.name',
@@ -77,7 +85,7 @@ export default function TeamSection() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.id}
@@ -89,7 +97,7 @@ export default function TeamSection() {
             >
               <div className="relative bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-biza-green/30 transition-all duration-500 hover:shadow-2xl hover:shadow-biza-green/10 hover:-translate-y-2">
                 {/* Image Container */}
-                <div className="relative h-96 overflow-hidden bg-gradient-to-b from-gray-100 to-gray-200">
+                <div className="relative h-[450px] overflow-hidden bg-gradient-to-b from-gray-100 to-gray-200">
                   <Image
                     src={member.image}
                     alt={t(member.nameKey)}
@@ -147,8 +155,8 @@ export default function TeamSection() {
                 </div>
 
                 {/* Bio Section */}
-                <div className="p-6 bg-white">
-                  <p className="text-gray-600 leading-relaxed text-sm line-clamp-4">
+                <div className="p-6 bg-white min-h-[180px]">
+                  <p className="text-gray-600 leading-relaxed text-sm">
                     {t(member.bioKey)}
                   </p>
                   
